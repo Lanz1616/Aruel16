@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Construct for loops that meet the following tasks</p>
+
+    <p>A. Print the numbers 0-30, one number per line</p>
+
+    <button onclick="loop1()">Display</button>
+
+    <p>B. Print only the even values from 0-40, one number per line</p>
+
+    <button onclick="loop2()">Display</button>
+
+    <p>C. Print the numbers 40-10 in descending order, but only if the number are multiples of 3</p>
+
+    <button onclick="loop3()">Display</button>
+</body>
+<script>
+    let age = parseInt(prompt("Enter your age:"));
+    if(age >= 25) {
+        alert("You are 25 years old or older.");
+    } else {
+        alert("You are younger than 25 years old.");
+    }
+
+    let number = parseInt(prompt("Enter a number:"));
+    if(number < 100){
+        alert("You entered a number less than 100");
+    } else {
+        alert("You entered a number 100 or greater");
+    }
+    </script>
+
+<script>
+
+    function loop1() {
+        for (var i = 0; i <= 30; i++) {
+      document.write(i + "<br>"); 
+    }
+        }
+</script>
+
+<script>
+    function loop2() {
+        for (var i = 0; i <= 40; i += 2) {
+      document.write(i + "<br>"); 
+    }
+        }
+</script>
+
+<script>
+    function loop3() {
+        for (var i = 40; i >= 10; i--) {
+            if (i % 3 === 0) {
+        document.write(i + "<br>"); 
+    }
+       }
+    }
+</script>
+</html>
